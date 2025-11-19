@@ -56,6 +56,7 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        gap: "10px",
       }}
     >
       <h1
@@ -63,13 +64,20 @@ export default function Home() {
           fontWeight: "bold",
           fontSize: "22px",
           borderBottom: "3px solid #000",
+          color: "#000",
         }}
       >
         AI Story Generator
       </h1>{" "}
       {/* Page title */}
       {/* Input for character names */}
-      <label>Characters (comma separated):</label>
+      <label
+        style={{
+          color: "#000",
+        }}
+      >
+        Characters (comma separated):
+      </label>
       <input
         type="text"
         value={characters} // Shows the current character names
@@ -78,15 +86,27 @@ export default function Home() {
           marginBottom: "10px",
           textAlign: "center",
           fontStyle: "italic",
+          color: "#000",
         }} // Makes it look nice
       />
       {/* Input for story genre */}
-      <label>Genre:</label>
+      <label
+        style={{
+          color: "#000",
+        }}
+      >
+        Genre:
+      </label>
       <input
         type="text"
         value={genre} // Shows the current genre
         onChange={(e) => setGenre(e.target.value)} // Updates our box when the user types
-        style={{ margin: "auto", textAlign: "center", fontStyle: "italic" }}
+        style={{
+          margin: "auto",
+          textAlign: "center",
+          fontStyle: "italic",
+          color: "#000",
+        }}
       />
       {/* Button to generate the story */}
       <button
@@ -99,6 +119,7 @@ export default function Home() {
           padding: "10px",
           borderRadius: "20px",
           fontWeight: "bold",
+          boxShadow: "3px 3px 10px rgba(0,0,0,0.5)",
         }}
       >
         {loading ? "Generating..." : "Generate Story"}{" "}
