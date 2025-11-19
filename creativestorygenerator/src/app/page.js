@@ -114,8 +114,10 @@ export default function Home() {
           style={{
             marginTop: "20px",
             padding: "10px",
-            border: "1px solid #ccc",
+            border: "3px solid #000",
             whiteSpace: "pre-wrap", // Keeps line breaks
+            backgroundColor: "#fff",
+            color: "#000",
           }}
         >
           {story}
