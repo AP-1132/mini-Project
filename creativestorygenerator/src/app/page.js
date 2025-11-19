@@ -98,6 +98,7 @@ export default function Home() {
           backgroundColor: "navy",
           padding: "10px",
           borderRadius: "20px",
+          fontWeight: "bold",
         }}
       >
         {loading ? "Generating..." : "Generate Story"}{" "}
